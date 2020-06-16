@@ -1,6 +1,5 @@
 #pragma once
 #include <iostream>
-#include <vector>
 #include "UserInterface.h"
 #include "PassengerCar.h"
 #include "Motorcycle.h"
@@ -10,8 +9,8 @@
 class Produce
 {
 public:
-	/*PassengerCar* create_passenger_car(Vehicle* veh);
-	Motorcycle* create_motorcycle();
-	Truck* create_truck();
-	Bus* create_bus();*/
+	PassengerCar* create_passenger_car(UserInterface* ui);
+	Motorcycle* create_motorcycle(UserInterface* ui);
+	Truck* create_truck(UserInterface* ui);
+	Bus* create_bus(UserInterface* ui);
 };
