@@ -1,5 +1,18 @@
 #include "Motorcycle.h"
 
+Motorcycle::Motorcycle()
+{
+	weight = 200;
+	max_speed = 200;
+	fuel_consumption = 3;
+	passengers_number = 1;
+	max_luggage = 3;
+	max_volume = 0.1;
+	carriage = 0;
+	car_class = "small";
+	seat_type = "ordinary";
+}
+
 std::string Motorcycle::vehicle_name()
 {
 	return motorcycle;

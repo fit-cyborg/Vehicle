@@ -42,6 +42,8 @@ struct Messages
 (limit: 20): " };
 	const std::string max_luggage_req{ "What is the total maximum luggage (kilograms)\n\
 (limits: for bus - 500, for car - 120, for motorcycle - 10): " };
+	const std::string max_luggage_select_req{ "What is the total maximum luggage(kilograms), in the case of a truck, the maximum carrying weight(kilograms)\n\
+(limits: for bus - 500, for car - 120, for motorcycle - 10, truck - 10000) : " };
 	const std::string body_type_req{ "There is a huge variety of body styles for cars. Here are the main: sedan, wagon, coupe, crossover.\n\
 What body type do you choose (you must write one of the proposed options above): " };
 	const std::string car_class_req{ "In total, there are 4 main classes of vehicles: small, medium, large and premium\n\
@@ -112,6 +114,7 @@ public:
 	void reclining_seat_req();
 	void max_luggage_pass_req();
 	void max_luggage_req();
+	void max_luggage_select_req();
 	void body_type_req();
 	void car_class_req();
 	void seat_type_req();

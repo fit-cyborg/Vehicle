@@ -20,7 +20,7 @@ Vehicle* Selection::select(UserInterface* ui)
 		double luggage;
 		while (true)
 		{
-			ui->max_luggage_req();
+			ui->max_luggage_select_req();
 			std::cin >> luggage;
 			if (ui->check_symbols() || luggage < 0)
 			{
@@ -53,7 +53,7 @@ Vehicle* Selection::select(UserInterface* ui)
 			}
 			break;
 		}
-		if ((passenger <= 2 && passenger > 0) && (luggage <= 10 && luggage >= 0) && (volume <= 0.4 && volume >= 0) &&
+		if ((passenger <= 2 && passenger > 0) && (luggage <= 10 && luggage >= 0) && (volume <= 0.3 && volume >= 0) &&
 			(price <= 30 && price >= 10))
 		{
 			Motorcycle* m = new Motorcycle;
@@ -64,19 +64,19 @@ Vehicle* Selection::select(UserInterface* ui)
 			}
 			return m;
 		}
-		else if ((passenger <= 4 && passenger > 0) && (luggage <= 100 && luggage >= 0) && (volume <= 1 && volume >= 0) &&
+		else if ((passenger <= 4 && passenger > 0) && (luggage <= 120 && luggage >= 0) && (volume <= 1 && volume >= 0) &&
 			(price >= 30 && price <= 60))
 		{
 			PassengerCar* c = new PassengerCar;
 			return c;
 		}
-		else if ((passenger <= 20 && passenger > 0) && (luggage <= 400 && luggage >= 0) && (volume <= 2 && volume >= 0) &&
+		else if ((passenger <= 25 && passenger > 0) && (luggage <= 500 && luggage >= 0) && (volume <= 10 && volume >= 0) &&
 			(price <= 100 && price >= 60))
 		{
 			Bus* b = new Bus;
 			return b;
 		}
-		else if ((passenger <= 2 && passenger > 0) && (luggage <= 10000 && luggage >= 0) && (volume <= 15 && volume >= 0) &&
+		else if ((passenger <= 2 && passenger > 0) && (luggage <= 10000 && luggage >= 0) && (volume <= 90 && volume >= 0) &&
 			(price <= 100 && price >= 60))
 		{
 			Truck* t = new Truck;

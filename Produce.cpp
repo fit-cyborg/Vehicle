@@ -375,7 +375,7 @@ Truck* Produce::create_truck(UserInterface* ui)
 	}
 	double carrying;
 	while (true)
-	{
+	{ 
 		ui->truck_carrying_req();
 		std::cin >> carrying;
 		if (ui->check_symbols() || carrying < 0 || carrying > 10000)

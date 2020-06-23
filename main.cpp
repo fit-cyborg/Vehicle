@@ -24,11 +24,6 @@ enum Vehicle_enum
 	passenger_car
 };
 
-std::string define_vehicle(Vehicle* veh)
-{
-	return(veh->vehicle_name());
-}
-
 void print_vehicles(std::vector<Vehicle*> vehicles, UserInterface* ui)
 {
 	if (vehicles.empty())
@@ -115,7 +110,7 @@ int main()
 			if (veh != 0)
 			{
 				ui.good_selecting();
-				ui.result_selection(define_vehicle(veh));
+				ui.result_selection(veh->vehicle_name());
 				veh->print(&ui);
 			}
 		}

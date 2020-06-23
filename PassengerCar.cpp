@@ -9,7 +9,7 @@ PassengerCar::PassengerCar()
 	max_luggage = 50;
 	max_volume = 0.5;
 	body_type = "sedan";
-	car_class = "medium";
+	car_class = "small";
 	seat_type = "ordinary";
 }
 

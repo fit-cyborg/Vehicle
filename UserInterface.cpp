@@ -146,6 +146,11 @@ void UserInterface::max_luggage_req()
 	std:: cout << messages.max_luggage_req;
 }
 
+void UserInterface::max_luggage_select_req()
+{
+	std::cout << messages.max_luggage_select_req;
+}
+
 void UserInterface::body_type_req()
 {
 	std::cout << messages.body_type_req;

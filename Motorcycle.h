@@ -6,6 +6,7 @@
 class Motorcycle: public Vehicle
 {
 public:
+	Motorcycle();
 	int count_comfort() override;
 	std::string vehicle_name() override;
 	void print(UserInterface* ui) override;

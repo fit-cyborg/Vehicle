@@ -1,5 +1,16 @@
 #include "Truck.h"
 
+Truck::Truck()
+{
+	weight = 30000;
+	max_speed = 90;
+	fuel_consumption = 27;
+	passengers_number = 2;
+	max_luggage = 0;
+	max_volume = 50;
+	carrying = 5000;
+}
+
 int Truck::count_comfort()
 {
 	return 0;
